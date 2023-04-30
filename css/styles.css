@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  /* font text */
+  --logo-font: "Raleway", sans-serif; /* logo */
+  --site-font: "Roboto", sans-serif; /* texte site */
+  /* color text */
+  --color-one: #212121; /* navigation-pages, h3 */
+  --color-two: #757575; /* p, tel-header  */
+  --color-fhree: #2196f3; /* logo-header */
+  --color-four: #ffffff; /* h1, text-buttons, logo-footer,   */
+  --color-five: #000000;
+  --footer-adresss-color: #ffff00;
+  /* background color */
+  --background-color-one: #2f303a; /* hero, footer  */
+  --background-color-two: #e5e5e5; /* Benefits section, What we do section, Buttons&Products sections */
+  --background-color-fhree: #f5f4fa; /* Our team section  */
+  --background-color-four: #2196f3; /* hero button,  portofolio buttons  */
+  --header-border-color: #ececec;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: var(--site-font);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--color-one);
+}
+
+/* header section */
+.header-section {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  /* left: 0px;
+  top: 0px; */
+  background-color: var(--color-four);
+  border-bottom: 1px solid #ececec;
+  display: flex;
+}
+.logo {
+  font-family: var(--logo-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  text-decoration: none;
+  color: var(--color-fhree);
+  /* cursor: none; */
+  display: inline-block;
+  margin-left: 215px;
+  padding: 24px 25px;
+}
+
+.header-logo-item {
+  color: var(--color-one);
+}
+
+.navigation-pages,
+.navigation-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--color-one);
+  display: flex;
+  align-items: left;
+}
+.navigation-pages {
+  margin-left: 93px;
+  display: flex;
+}
+.navigation-link {
+  margin-right: 50px;
+  display: block;
+  padding: 32px 0 31px 0;
+  display: flex;
+}
+
+.navigation-link:hover,
+.navigation-link:focus,
+.navigation-contact-item:focus,
+.navigation-contact-item:hover {
+  color: var(--color-fhree);
+  /* cursor: none; */
+}
+
+.navigation-contact-item {
+  color: var(--color-two);
+  padding: 32px 0 31px 0;
+  display: flex;
+}
+
+.navigation-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+/* Hero section */
+.hero,
+.footer-section {
+  background-color: var(--background-color-one);
+  width: 1600px;
+}
+.hero {
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  display: block;
+  text-align: center;
+}
+
+.hero-title {
+  color: var(--color-four);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  letter-spacing: 0.06em; /* sau 6% */
+  text-transform: uppercase;
+  text-align: center;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+  position: absolute;
+}
+
+.hero-button {
+  color: var(--color-four);
+  background-color: var(--background-color-four);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  left: 700px;
+  top: 430px;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* Benefits section */
+.benefits,
+.do {
+  background-color: var(--color-four);
+  margin: auto;
+  width: 70%;
+}
+.benefits {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.title-benefit {
+  color: var(--color-one);
+  /* text-transform: uppercase; */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2.142;
+  letter-spacing: 0.03em;
+  text-align: left;
+  width: 270px;
+  height: 16px;
+  left: 815px;
+  top: 774px;
+  margin-bottom: 10px;
+}
+
+.text-benefit {
+  color: var(--color-two);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
+  text-align: left;
+  width: 270px;
+  height: 75px;
+  left: 815px;
+  top: 800px;
+}
+
+/* What we do section */
+.do {
+  left: 215px;
+}
+
+.list-do {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50;
+}
+.item-do:not(:last-child) {
+  margin-right: 30px;
+}
+
+.text-heading {
+  color: var(--color-one);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+.do-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Our team section */
+.team {
+  background-color: var(--background-color-fhree);
+  margin: auto;
+  width: 70%;
+  position: absolute;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+}
+.list-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-team {
+  background-color: var(--color-four);
+  width: 270px;
+  height: 368px;
+  left: 815px;
+  top: 1635px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  background-color: var(--main-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+/* .item-team:not(:last-child) {
+  margin-right: 30px;
+} */
+.team-name {
+  color: var(--color-one);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-title {
+  text-align: center;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-two);
+  font-size: 16px;
+  padding: 10px;
+}
+
+.image-team {
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+  height: 260px;
+  left: 815px;
+  top: 1635px;
+  margin: auto;
+}
+.image-team:not(:last-child) {
+  margin-right: 30px;
+}
+/* Footer section */
+
+.footer-logo-studio {
+  color: var(--background-color-two);
+}
+.footer-street-name {
+  color: var(--color-four);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+.footer-mail-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail-link:hover,
+.footer-mail-link:focus {
+  color: var(--color-fhree);
+}
+.footer-section {
+  position: absolute;
+  width: 1600px;
+  height: 251px;
+  left: 0px;
+  top: 2097px;
+}
+/* Portofolio page- <!-- Services section --> */
+
+.products-section,
+.buttons-section {
+  background-color: var(--background-color-two);
+}
+.buttons-section {
+  /* position: absolute;
+  width: 516px;
+  height: 38px; */
+  left: 542px;
+  top: 174px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exemple-button {
+  background-color: var(--background-color-fhree);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  color: var(--color-one);
+  cursor: pointer;
+}
+
+.exemple-button:hover,
+.exemple-button:focus {
+  background-color: var(--background-color-four);
+  color: var(--color-four);
+}
+.product-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--color-one);
+  text-align: left;
+}
+.product-title {
+  color: var(--color-two);
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  text-align: left;
+}
+.box-products-section {
+  /* position: absolute; */
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+  background-color: #eeeeee;
+  justify-content: center;
+  margin-bottom: 50;
+}
+
+/* TEMA 3 */
+a,
+b,
+button,
+br,
+img,
+span {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+.logo-footer {
+  margin-right: 1240px;
+}
+
+.container {
+  width: 1200px;
+}
+
+.list-benefits {
+  display: flex;
+}
+.item-benefit {
+  margin-right: 24px;
+  flex-basis: calc((100% - 72px) / 4);
+}

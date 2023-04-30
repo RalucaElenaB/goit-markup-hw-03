@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <title>Web Studio</title>
+  </head>
+  <body>
+    <!-- Header section: logo, navigation, contacts -->
+    <header class="header-section">
+      <div class="container header-container">
+        <nav class="nav-menu">
+          <a class="logo logo-header" href="index.html"
+            >Web<span class="header-logo-item">Studio</span></a
+          >
+          <ul class="navigation-pages">
+            <li><a class="navigation-link" href="studio.html">Studio</a></li>
+            <li>
+              <a class="navigation-link" href="portofolio.html">Portofolio</a>
+            </li>
+            <li>
+              <a class="navigation-link" href="contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="navigation-contacts">
+          <li>
+            <a class="navigation-contact-item" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="navigation-contact-item" href="tel:+1212-772-4150"
+              >+1 212-772-4150</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Urmeaza cuprinsul unic din pagina -->
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="container">
+          <img src="./images/hero.jpg" alt="hero" width="1600" height="600" />
+          <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+          <button class="hero-button" type="button">Request our service</button>
+        </div>
+      </section>
+
+      <!-- Benefits section: h3, p -->
+      <section class="benefits">
+        <div class="container">
+          <ul class="list-benefits">
+            <li class="item-benefit">
+              <h3 class="title-benefit">ATTENTION TO DETAILS</h3>
+              <p class="text-benefit">
+                We go into all the details and processes of your business to
+                develop a customized solution.
+              </p>
+            </li>
+            <li class="item-benefit">
+              <h3 class="title-benefit">PUNCTUALITY</h3>
+              <p class="text-benefit">
+                With us, you can feel safe and secure. An important principle of
+                the company: respect your time and deadlines.
+              </p>
+            </li>
+            <li class="item-benefit">
+              <h3 class="title-benefit">PLANNING</h3>
+              <p class="text-benefit">
+                You will be able to observe and participate in every phase of
+                solution development and implementation.
+              </p>
+            </li>
+            <li class="item-benefit">
+              <h3 class="title-benefit">MODERN TECHNOLOGIES</h3>
+              <p class="text-benefit">
+                We use innovative tools to solve assigned tasks. It's time to
+                simplify work processes.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- What we do section: h2, img  -->
+      <section class="do">
+        <div class="container">
+          <h2 class="text-heading">What we do</h2>
+          <ul class="list-do">
+            <li class="item-do">
+              <img
+                src="./images/work1.jpg"
+                alt="work on laptop"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="item-do">
+              <img
+                src="./images/work2.jpg"
+                alt="work on laptop and on phone"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="item-do">
+              <img
+                src="./images/work3.jpg"
+                alt="work with colors"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Our team section: h2, h3, p -->
+      <section class="team">
+        <div class="container">
+          <h2 class="text-heading">Our Team</h2>
+          <ul class="list-team">
+            <li class="item-team">
+              <img
+                class="image-team"
+                src="./images/walker.jpg"
+                alt="Christopher Walker"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Christopher Walker</h3>
+              <p class="team-title">Product Designer</p>
+            </li>
+            <li class="item-team">
+              <img
+                class="image-team"
+                src="./images/evans.jpg"
+                alt="Kylie Evans"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Kylie Evans</h3>
+              <p class="team-title">Frontend Developer</p>
+            </li>
+            <li class="item-team">
+              <img
+                class="image-team"
+                src="./images/harris.jpg"
+                alt="Ryan Harris"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Ryan Harris</h3>
+              <p class="team-title">Marketing</p>
+            </li>
+            <li class="item-team">
+              <img
+                class="image-team"
+                src="./images/moore.jpg"
+                alt="Tyler Moore"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Tyler Moore</h3>
+              <p class="team-title">UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section: logo, contacts- adress, mail, tel -->
+    <footer>
+      <section class="footer-section">
+        <div class="container container-section">
+          <!-- <img src="./images/footer.jpg" alt="footer image" /> -->
+          <a class="logo logo-footer" href="index.html"
+            >Web<span class="footer-logo-studio">Studio</span></a
+          >
+          <address>
+            <ul>
+              <li class="footer-street-name">
+                <span>695 Park Ave, NY 10065, USA</span> <br />
+              </li>
+              <!-- 695 Park Ave, NY 10065, USA <a href=""></a> in loc de span -->
+              <li>
+                <a class="footer-mail-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="contact-phone-link" href="tel:+1-212-772-4150"
+                  >tel:+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
