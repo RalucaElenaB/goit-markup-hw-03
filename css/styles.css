@@ -17,6 +17,8 @@
   --background-color-fhree: #f5f4fa; /* Our team section  */
   --background-color-four: #2196f3; /* hero button,  portofolio buttons  */
   --header-border-color: #ececec;
+  --item-product: 30px;
+  --border-card: #eeeeee;
 }
 
 html {
@@ -43,9 +45,12 @@ a {
 
 h1,
 h2,
-h3,
-p {
+h3 {
   margin: 0;
+}
+
+.container {
+  width: 1200px;
 }
 
 body {
@@ -58,16 +63,25 @@ body {
 }
 
 /* header section */
-.header-section {
-  position: absolute;
+.header {
   width: 1600px;
   height: 80px;
-  /* left: 0px;
-  top: 0px; */
   background-color: var(--color-four);
   border-bottom: 1px solid #ececec;
   display: flex;
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: var(--logo-font);
   font-size: 26px;
@@ -85,47 +99,50 @@ body {
   color: var(--color-one);
 }
 
-.navigation-pages,
-.navigation-contacts {
+.list-pages-menu,
+.list-contacts-menu {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
-  color: var(--color-one);
   display: flex;
   align-items: left;
 }
-.navigation-pages {
-  margin-left: 93px;
-  display: flex;
+
+.list-contacts-menu {
+  color: var(--color-two);
 }
-.navigation-link {
+
+.list-pages-menu {
+  display: flex;
+  margin-left: 97px;
+}
+
+.link-page-menu {
   margin-right: 50px;
-  display: block;
   padding: 32px 0 31px 0;
+  display: flex;
+  color: var(--color-one);
+}
+.link-contact-menu {
+  color: var(--color-two);
   display: flex;
 }
 
-.navigation-link:hover,
-.navigation-link:focus,
-.navigation-contact-item:focus,
-.navigation-contact-item:hover {
+.link-page-menu:hover,
+.link-page-menu:focus,
+.link-contact-menu:focus,
+.link-contact-menu:hover {
   color: var(--color-fhree);
   /* cursor: none; */
 }
-
-.navigation-contact-item {
-  color: var(--color-two);
-  padding: 32px 0 31px 0;
-  display: flex;
+.current-link {
+  color: var(--color-fhree);
 }
 
-.navigation-contact-item:not(:last-child) {
-  margin-right: 50px;
-}
 /* Hero section */
 .hero,
-.footer-section {
+.footer {
   background-color: var(--background-color-one);
   width: 1600px;
 }
@@ -182,7 +199,13 @@ body {
   margin-top: 94px;
   margin-bottom: 94px;
 }
-
+.list-benefits {
+  display: flex;
+}
+.item-benefit {
+  margin-right: 24px;
+  flex-basis: calc((100% - 72px) / 4);
+}
 .title-benefit {
   color: var(--color-one);
   /* text-transform: uppercase; */
@@ -265,7 +288,6 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
-  background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -306,8 +328,17 @@ body {
   margin-right: 30px;
 }
 /* Footer section */
-
-.footer-logo-studio {
+.footer {
+  position: absolute;
+  width: 1600px;
+  height: 251px;
+  left: 0px;
+  top: 2097px;
+}
+.logo-footer {
+  margin-right: 1240px;
+}
+.footer-logo-item {
   color: var(--background-color-two);
 }
 .footer-street-name {
@@ -317,52 +348,80 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
 }
-.footer-mail-link {
+.footer-mail-link,
+.footer-phone-link {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-mail-link:hover,
-.footer-mail-link:focus {
+.footer-mail-link:focus,
+.footer-phone-link:hover,
+.footer-phone-link:focus {
   color: var(--color-fhree);
 }
-.footer-section {
-  position: absolute;
-  width: 1600px;
-  height: 251px;
-  left: 0px;
-  top: 2097px;
-}
-/* Portofolio page- <!-- Services section --> */
 
-.products-section,
-.buttons-section {
-  background-color: var(--background-color-two);
+/* Portofolio page- <!-- Services section --> */
+.portofolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: 230px;
 }
-.buttons-section {
-  /* position: absolute;
-  width: 516px;
-  height: 38px; */
+
+.list-products,
+.list-buttons {
+  /* background-color: var(--background-color-two); */
+  display: flex;
+}
+.list-buttons {
+  /* width: 516px;
+  height: 38px;
   left: 542px;
-  top: 174px;
+  top: 174px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
+
+.item-button:not(:last-child) {
+  margin-right: 8px;
+}
+
 .exemple-button {
   background-color: var(--background-color-fhree);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
   border: none;
   color: var(--color-one);
   cursor: pointer;
+  padding: 6px 22px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .exemple-button:hover,
 .exemple-button:focus {
   background-color: var(--background-color-four);
   color: var(--color-four);
+}
+
+.current-button {
+  background-color: var(--background-color-four);
+  color: var(--color-four);
+}
+
+.list-products {
+  margin-left: calc(-1 * var(--item-product));
+  margin-bottom: calc(-1 * var(--item-product));
+  flex-wrap: wrap;
+  justify-content: center;
+  /* SAU margin-left: -30px;
+  margin-top: -30px; */
+  display: flex;
+  align-items: center;
 }
 .product-name {
   font-weight: 700;
@@ -379,50 +438,26 @@ body {
   letter-spacing: 0.03em;
   font-size: 16px;
   text-align: left;
+  margin-top: 4px;
 }
-.box-products-section {
+.item-product {
   /* position: absolute; */
   width: 370px;
-  height: 404px;
-  left: 215px;
   top: 262px;
   background-color: #eeeeee;
   justify-content: center;
-  margin-bottom: 50;
-}
-
-/* TEMA 3 */
-a,
-b,
-button,
-br,
-img,
-span {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+  margin-top: 30px;
   align-items: center;
-}
-.nav-menu {
   display: flex;
-  align-items: center;
-}
-.logo-footer {
-  margin-right: 1240px;
+  flex-direction: column;
+  padding-bottom: 30px;
 }
 
-.container {
-  width: 1200px;
-}
-
-.list-benefits {
+.container-products {
   display: flex;
-}
-.item-benefit {
-  margin-right: 24px;
-  flex-basis: calc((100% - 72px) / 4);
+  flex-direction: column;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
