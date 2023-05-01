@@ -51,6 +51,7 @@ h3 {
 
 .container {
   width: 1200px;
+  /* margin: 0 auto; */
 }
 
 body {
@@ -81,7 +82,9 @@ body {
   display: flex;
   align-items: center;
 }
-
+.nav-menu .contacts-menu li + li {
+  margin-left: 40px;
+}
 .logo {
   font-family: var(--logo-font);
   font-size: 26px;
@@ -138,6 +141,7 @@ body {
 }
 .current-link {
   color: var(--color-fhree);
+  margin-right: 40px;
 }
 
 /* Hero section */
@@ -192,12 +196,12 @@ body {
 .benefits,
 .do {
   background-color: var(--color-four);
-  margin: auto;
-  width: 70%;
+  margin-left: 215px;
 }
 .benefits {
   margin-top: 94px;
   margin-bottom: 94px;
+  margin-left: 215px;
 }
 .list-benefits {
   display: flex;
@@ -236,7 +240,7 @@ body {
 
 /* What we do section */
 .do {
-  left: 215px;
+  margin-left: 215px;
 }
 
 .list-do {
@@ -254,6 +258,7 @@ body {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+  align-items: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   margin-top: 94px;
@@ -277,6 +282,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 215px;
+  margin-left: 215px;
 }
 .item-team {
   background-color: var(--color-four);
@@ -337,6 +344,7 @@ body {
 }
 .logo-footer {
   margin-right: 1240px;
+  margin-left: 225px;
 }
 .footer-logo-item {
   color: var(--background-color-two);
@@ -357,6 +365,11 @@ body {
 .footer-phone-link:hover,
 .footer-phone-link:focus {
   color: var(--color-fhree);
+}
+
+.contacts-footer {
+  display: flex;
+  margin-left: 215px;
 }
 
 /* Portofolio page- <!-- Services section --> */
@@ -413,6 +426,10 @@ body {
   color: var(--color-four);
 }
 
+.products {
+  display: flex;
+  margin-top: 50px;
+}
 .list-products {
   margin-left: calc(-1 * var(--item-product));
   margin-bottom: calc(-1 * var(--item-product));
@@ -422,6 +439,11 @@ body {
   margin-top: -30px; */
   display: flex;
   align-items: center;
+  /* margin-left: 215px;
+  margin-right: 215px; */
+  padding-inline-start: 0;
+  padding-bottom: 94px;
+  gap: 30px;
 }
 .product-name {
   font-weight: 700;
@@ -452,6 +474,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
+  font-weight: 700px;
 }
 
 .container-products {
